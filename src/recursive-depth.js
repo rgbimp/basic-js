@@ -2,7 +2,6 @@ const CustomError = require("../extensions/custom-error");
 
 module.exports = class DepthCalculator {
   calculateDepth(array) {
-    let count = 0;
     let a = array.filter( item => {
       return (Array.isArray(item)) 
     })
